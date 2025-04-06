@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard | Edgents</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f4f4f4;
+      padding-top: 60px;
+    }
+    .dashboard-box {
+      background: white;
+      padding: 2rem;
+      margin: auto;
+      max-width: 900px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    .dashboard-header {
+      margin-bottom: 2rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      padding: 1rem;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .btn-logout {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <a href="/logout" class="btn btn-outline-danger btn-logout">Logout</a>
+
+  <div class="dashboard-box text-center">
+    <div class="dashboard-header">
+      <h2>Welcome, {{ user.first_name }} 👋</h2>
+      <p><strong>Role:</strong> {{ user.role }}</p>
+      <hr>
+    </div>
+
+      <div class="card">
+        <h5>📄 View Interview Feedback</h5>
+        <p>Review your performance report with strengths, weaknesses, and tips.</p>
+        <a href="/interview/feedback" class="btn btn-primary btn-sm">View Feedback</a>
+      </div>
+
+      <div class="card">
+        <h5>🧠 TA-Student Meeting Analysis</h5>
+        <p>Get insights from your recorded TA sessions and topic understanding.</p>
+        <a href="/meeting/analysis" class="btn btn-primary btn-sm">View Analysis</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
