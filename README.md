@@ -20,72 +20,19 @@ We Zaap is a game-changing AI-powered platform designed to empower students by r
 
 🛠️ Tech Stack
 
-Backend: Flask, Python
-
-Database: SQLAlchemy (SQLite/PostgreSQL)
-
-AI & ML:
-
-Retrieval-Augmented Generation (RAG)
-
-OpenAI Whisper API (Speech-to-text)
-
-GPT-4 (Question generation & evaluation)
-
-Fine-tuned evaluation model
-
-Web Scraping: BeautifulSoup, Requests
-
-Text-to-Speech: Google Text-to-Speech (gTTS)
-
-Frontend: HTML, CSS, JavaScript
-
-Environment Management: python-dotenv
-
-Security: Werkzeug (Password hashing)
+![image](https://github.com/user-attachments/assets/511b7b29-876c-425a-a3b3-adeddd3d2a04)
 
 
 📦 Installation
 
-Quickly set up We Zaap locally with these easy steps:
+![image](https://github.com/user-attachments/assets/4917cbe3-4677-4f53-a7ba-409eee70c56c)
 
-🔧 Prerequisites
-
-Python 3.8+
-
-pip (Python package manager)
-
-Git
-
-OpenAI API Key
 
 
 🚀 Setup
 
-Clone the Repository:
+![image](https://github.com/user-attachments/assets/9ada3b8f-c48b-470f-88e6-bd1e2e0808a7)
 
-git clone https://github.com/your-username/we-zaap.git
-cd we-zaap
-
-Create a Virtual Environment:
-
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-Install Dependencies:
-
-pip install -r requirements.txt
-
-Configure Environment Variables:
-
-Create a .env file in the root directory and add:
-
-OPENAI_API_KEY=your-api-key
-DATABASE_URL=sqlite:///we_zaap.db
-
-Run the Application:
-
-Python App.py
 
 
 🎨 Project Structure
