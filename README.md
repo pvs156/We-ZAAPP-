@@ -2,7 +2,7 @@
 
  
 
-We Zaap is a game-changing AI-powered platform designed to empower students by revolutionizing interview preparation. Through real-time, immersive mock interviews, We Zaap harnesses cutting-edge AI to provide personalized practice sessions, detailed feedback, and actionable insights, ensuring users excel in real-world interview situations.
+We Zaap is an innovative AI-driven platform built to transform how students prepare for interviews. By simulating realistic, immersive mock interview scenarios, We Zaap provides personalized practice, real-time feedback, and actionable insights, ensuring users gain confidence and improve their interviewing skills effectively.
 
 
 🌟 Features
