@@ -90,17 +90,23 @@ Python App.py
 
 🎨 Project Structure
 
-We-Zaap/
-├── app/
-│   ├── __init__.py
-│   ├── routes.py
-│   ├── templates/
-│   └── static/
-├── migrations/
-├── tests/
-├── .env
-├── requirements.txt
-└── run.py
+we-zaap/
+│
+├── app.py                 # Main Flask application
+├── audio_processor.py     # Handles audio transcription with Whisper API
+├── openai_config.py       # OpenAI client configuration
+├── models.py              # SQLAlchemy database models
+├── templates/             # HTML templates for frontend
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard_student.html
+│   └── ...
+├── static/                # Static files (CSS, JS, images)
+├── tmp_audio/             # Temporary directory for audio files
+├── .env                   # Environment variables
+├── requirements.txt       # Project dependencies
+└── README.md              # Project documentation
 
 
 🤝 Contributing
