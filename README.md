@@ -1,5 +1,5 @@
 🚀 We Zaap
-
+https://we-zaap-cur.vercel
  
 
 We Zaap is an innovative AI-driven platform built to transform how students prepare for interviews. By simulating realistic, immersive mock interview scenarios, We Zaap provides personalized practice, real-time feedback, and actionable insights, ensuring users gain confidence and improve their interviewing skills effectively.
