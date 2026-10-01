@@ -21,12 +21,16 @@ from audio_processor import transcribe_audio  # Ensure this module exists and wo
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = 'your-secret-key-here'  # Required for session management
+app.secret_key = os.getenv('SECRET_KEY')
+if not app.secret_key:
+    raise RuntimeError('SECRET_KEY must be set in the environment.')
 
 logging.basicConfig(level=logging.DEBUG)
 
 # Database setup...
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = os.getenv('DATABASE_URL')
+if not DATABASE_URL:
+    raise RuntimeError('DATABASE_URL must be set in the environment.')
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base.metadata.create_all(bind=engine)
